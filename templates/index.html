@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Site</title>
+</head>
+<body>
+    <h1>Welcome to the site</h1>
+    {% if authenticated %}
+        <a href="/profile">Profile</a> <br />
+        <a href="/signout">Log Out</a> <br />
+    {% else %}
+        <a href="/signup">Register</a> <br />
+        <a href="/signin">Log In</a> <br />
+    {% endif %}
+</body>
+</html>
